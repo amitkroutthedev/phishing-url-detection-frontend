@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/svg/logo.svg";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="navbar bg-base-100">
@@ -10,12 +10,14 @@ function Navbar() {
         </button>
       </div>
       <div className="flex-1">
-        <a
-          className="btn btn-ghost normal-case text-xl text-sky-400/100"
-          href="#/"
-        >
-          PhishNet.AI
-        </a>
+        <Link to="/">
+          <a
+            className="btn btn-ghost normal-case text-xl text-sky-400/100"
+            href="#/"
+          >
+            PhishNet.AI
+          </a>
+        </Link>
       </div>
     </div>
   );

@@ -19,6 +19,7 @@ function CheckUrl() {
   };
   const checkUrlHandler = () => {
     document.body.style.overflow = "hidden";
+
     if (checkLink(inputUrl)) {
       setLoading(true);
       axios
@@ -32,7 +33,7 @@ function CheckUrl() {
         })
         .catch((err) => console.log(err));
     } else {
-      console.log(inputUrl, "is not url");
+      console.log("not an url");
     }
   };
   const clearHandler = () => {
@@ -62,16 +63,16 @@ function CheckUrl() {
           <div className="w-full">
             <label
               className="btn modal-button m-3"
-              for="my-modal-2"
+              htmlFor="my-modal-2"
               onClick={checkUrlHandler}
             >
-              Check URL
+              Analyze URL
             </label>{" "}
             <Link to="/">
               <button className="btn m-3">Return home</button>
             </Link>
           </div>
-          <input type="checkbox" id="my-modal-2" class="modal-toggle" />
+          <input type="checkbox" id="my-modal-2" className="modal-toggle" />
           <div class="modal">
             <div class="modal-box">
               <label
@@ -81,7 +82,11 @@ function CheckUrl() {
               >
                 ✕
               </label>
-              {loading ? (
+              {inputUrl === "" ? (
+                <h3 className="font-bold text-lg text-red-400 text-center">
+                  Provide URL to analyze
+                </h3>
+              ) : loading ? (
                 <progress className="progress w-full"></progress>
               ) : (
                 <>

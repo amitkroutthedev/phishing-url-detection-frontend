@@ -1,6 +1,5 @@
 import React from "react";
-// import AcceptIcon from "../../assets/png/accept64.png";
-// import CrossIcon from "../../assets/png/cross64.png";
+
 function Feature() {
   return (
     <div className="bg-base-200 p-2">
@@ -16,7 +15,7 @@ function Feature() {
         </p>
       </div>
       <div className="card bg-base-300 rounded-box p-2 m-2">
-        <h1 className="text-4xl font-semibold text-sky-400/75">Feature</h1>
+        {/* <h1 className="text-4xl font-semibold text-sky-400/75">Feature</h1> */}
         <div className="flex w-full flex-col lg:flex-row">
           <div className="grid h-32 flex-grow card bg-base-300 rounded-box place-items-center text-center">
             Trained and Tested with 2000 urls in Google Collab
