@@ -49,6 +49,10 @@ Start the server
 
 
 
+- Live Extension - https://github.com/amitkroutthedev/phishing-url-detection-extension
+- Backend - https://github.com/amitkroutthedev/phishing-url-detection-backend
+- ML - https://github.com/amitkroutthedev/phishing-url-detection-ml
+
 ## Feedback
 
 If you have any feedback, please reach out to us at amitroutadev.0723@gmail.com
