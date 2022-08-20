@@ -1,7 +1,7 @@
 
 # phishing-url-detection-frontend
 
-An UI for phishing detection application where the user gives
+PHISHNET.AI is an UI for phishing detection application where the user gives
 input of the URL and is able to know if the URL is phishing or legitimate along
 with which features the URL satisfies.
 
